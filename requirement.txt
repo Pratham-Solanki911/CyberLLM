@@ -1,0 +1,6 @@
+requests
+python-dotenv
+groq
+playwright==1.37.0
+PyQt5
+dnslib

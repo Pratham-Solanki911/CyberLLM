@@ -1,0 +1,16 @@
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore system files (optional)
+.DS_Store
+Thumbs.db
+
+# Ignore virtual environments (if applicable)
+venv/
+.env/
+
+# Ignore logs (optional)
+*.log

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SecurityApp</class>
+ <widget class="QMainWindow" name="SecurityApp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OSINT &amp; DNS Security System</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="groupAddURL">
+      <property name="title">
+       <string>Add URL to DNS Security</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelUrl">
+         <property name="text">
+          <string>URL:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="urlInput"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelThreatFlag">
+         <property name="text">
+          <string>Threat Flag:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="threatFlagCombo">
+         <item>
+          <property name="text">
+           <string>safe</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>malicious</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>undetected</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="addButton">
+         <property name="text">
+          <string>Add URL</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupSearchURL">
+      <property name="title">
+       <string>Search DNS Entries</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelSearchUrl">
+         <property name="text">
+          <string>URL:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="searchInput"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="searchButton">
+         <property name="text">
+          <string>Search</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupShowAllEntries">
+      <property name="title">
+       <string>DNS Entries</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="showAllButton">
+         <property name="text">
+          <string>Show All Entries</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPlainTextEdit" name="entriesText">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupDnsControl">
+      <property name="title">
+       <string>DNS Security Control</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QCheckBox" name="dnsActiveCheckbox">
+         <property name="text">
+          <string>Activate DNS Security</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="runInBackgroundCheckbox">
+         <property name="text">
+          <string>Run DNS Server in Background</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupOSINT">
+      <property name="title">
+       <string>OSINT Analysis</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelOsintUrl">
+         <property name="text">
+          <string>URL:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="osintInput"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="osintButton">
+         <property name="text">
+          <string>Generate OSINT Report</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <resources/>
+  <connections/>
+ </widget>
+ <customwidgets/>
+</ui>
